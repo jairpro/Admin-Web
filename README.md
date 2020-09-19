@@ -1,6 +1,19 @@
 # Admin-Web
  Website de testes da [Admin-API](https://github.com/jairpro/Admin-API)
 
+## Instalação:
+
+### Configurar módulo principal:
+ 
+ 1) Copiar `/.env.example.php` para `/.env.php`;
+ 
+ 2) Configurar uma `/.env.php` para o ambiente desejado;
+
+Constante | Descrição
+--------- | ---------
+API_URL | URL do deploy da Admin-API (veja instalação [aqui](https://github.com/jairpro/Admin-API#instala%C3%A7%C3%A3o)).
+APP_NAME | Nome personalizado da aplicação 
+
 
 ## Rotas
 Rota | Descrição
