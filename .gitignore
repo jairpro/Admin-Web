@@ -1,0 +1,5 @@
+.gitatributes
+php_errors.log
+.env.php
+.env.development.php
+.env.production.php
