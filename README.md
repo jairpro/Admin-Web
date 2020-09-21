@@ -25,6 +25,7 @@ Rota | Descrição | JWT
 
 
 ## Falta implementar:
+ - Painel do administrador;
  - Alteração de senha;
  - Alteração do perfil;
  - Cadastro de administradores:
