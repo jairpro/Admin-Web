@@ -43,8 +43,7 @@ Rota | Descrição | JWT
  - Implementar Vue-axios; 
    Ou migrar/encapsular Router.php e Request.php do express-php-lite para frontend ao estilo react-router-dom (BrowserRouter, Route e Switch);
 
- - Implementar a Vue Router 
-   Ou encapsular o ajax do jQuery para requisições ao estilo Axios;
+ - Implementar a Vue Router;
 
 
 # [MIT LICENSE](https://github.com/jairpro/Admin-Web/blob/master/LICENSE)
