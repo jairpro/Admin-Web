@@ -16,17 +16,15 @@ APP_NAME | Nome personalizado da aplicação
 
 
 ## Rotas
-Rota | Descrição
----- | ---------
+Rota | Descrição | JWT
+---- | --------- | ---
 / | Home com entrada do administrador
 /admin/forgot_password | Esqueceu a senha? 
 /admin/reset_password | Redefinição de senha
+/admin/painel | Painel do Administrador | S
 
 
 ## Falta implementar:
- - Reenvio de redefinição de senha;
- - Painel do administrador;
- - Logout;
  - Alteração de senha;
  - Alteração do perfil;
  - Cadastro de administradores:
