@@ -22,6 +22,7 @@ Rota | Descrição | JWT
 /admin/forgot_password | Esqueceu a senha? 
 /admin/reset_password | Redefinição de senha
 /admin/painel | Painel do Administrador | S
+/admin/logout | Sair do Painel | S
 
 
 ## Falta implementar:

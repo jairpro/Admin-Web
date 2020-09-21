@@ -24,11 +24,12 @@
 
   api.delete('/admin/logout', {
     success(result) {
+      logout();
     },
     error(error, message) {
+      logout();
     }
   }, token);
-  logout();
 </script>
 <?php
       exit();
