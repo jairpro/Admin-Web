@@ -71,6 +71,13 @@ a:hover {
 button:hover {
   filter: brightness(90%);
 }
+button:disabled {
+  background: #41414d;
+  color: #999;
+}
+button:disabled:hover {
+  filter: brightness(100%);
+}
 
 input, button, textarea {
   font: 400 18px Roboto, sans-serif;
@@ -196,10 +203,62 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 24pt;
+  font-size: 20px;
   font-weight: bold;
+  text-align: center;
+  width: 100%;
 }
 
 .xdebug-error th, .xdebug-error td {
   color: #000;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+a {
+  cursor: pointer; 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content p {
+  text-align: center;
+}
+
+#contentLogin {
+  height: 300px;
+  width: 400px;
+}
+
+#contentForgotPassword {
+  height: 290px;
+  width: 400px;
+}
+
+#containerResend {
+  width: 100%;
+}
+
+#contentResetPassword {
+  height: 270px;
+  width: 400px;
+}
+
+.note {
+  font-size: 15px;
+  color: #aad;
+  color: #3399c1;
+  color: #5bffff;
+  color: #3aa0d1;
+  color: #89feff;
 }
