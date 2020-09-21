@@ -29,8 +29,10 @@ class ForgotPassword {
     </div>
 
     <div id="containerResend" class="hidden">
-      <p>Verifique a mensagem na caixa de entrada do seu email.<br><span class="note">NOTA: Caso não esteja lá, aguarde um pouco ou verifique na pasta spam (lixo eletrônico).</span></p>
-      <br>
+      <div id="verify" class="show">
+        <p>Verifique a mensagem na caixa de entrada do seu email.<br><span class="note">NOTA: Caso não esteja lá, aguarde um pouco ou verifique na pasta spam (lixo eletrônico).</span></p>
+        <br>
+      </div>
       <form id="formResend" onsubmit="submitResend(event)">
         <div class="links">
           <a onclick="voltar()">Voltar</a>
@@ -53,6 +55,7 @@ class ForgotPassword {
 
   function submitResend(e) {
     hidden(window.message);
+    hidden(window.verify);
     window.reenviar.disabled = true;
     window.reenviar.innerText = 'Reenviando...';
     submitForgot(e);
@@ -71,6 +74,7 @@ class ForgotPassword {
       success(result) {
         hidden(window.containerForgot);
         show(window.containerResend);
+        show(window.verify);
         window.enviar.innerText = 'Enviar';
         window.enviar.disabled = false;
         window.reenviar.innerText = 'Reenviar';

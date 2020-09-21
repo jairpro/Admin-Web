@@ -66,16 +66,13 @@ class ResetPassword {
     window.reenviar.disabled = true;
     window.reenviar.innerText = 'Reenviando...';
 
-    var payload = parseJwtPayload(gup('token'));
-    if (!payload || !payload.user) {
+    var token = gup('token');
+    if (!token) {
       window.location = "/admin/forgot_password";
       return false; 
     }
 
-    api.post("/admin/forgot_password", {
-      data: {
-        user: payload.user
-      },
+    api.postToken("/admin/forgot_password/resend", {
       success(result) {
         show(window.verify);
         hidden(window.linkVoltar);
